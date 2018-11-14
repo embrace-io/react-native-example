@@ -1,8 +1,9 @@
 # react-native-example
-Example Code for usage from React Native
+Example Code for usage of Embrace in React Native
 
 ## iOS Integration
 
+Steps to Integrate:
 1. Start with the [iOS Quick Integration](https://docs.embrace.io/docs/ios-integration-guide) in order to add and initialize the Embrace SDK.
 1. Copy [EmbraceManager.h](/EmbraceManager.h) and [EmbraceManager.m](/EmbraceManager.m) into the `ios` React Native folder. This [guide](https://shift.infinite.red/beginner-s-guide-to-using-cocoapods-with-react-native-46cb4d372995) gives an example of placement and CocoaPod configuration.
 1. Copy [embrace.js](/embrace.js) into your JS codebase. Once complete, methods can be imported and called from this file.
@@ -18,3 +19,5 @@ export default class App extends Component<Props> {
   }
 }
 ```
+
+For additional functionality and explanations please refer to the [React Native Guide](https://docs.embrace.io/v1.2.6/docs/quick-quide).
