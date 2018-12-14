@@ -1,4 +1,5 @@
-package com.embracerntestsuite;
+// Change with the package name of your application
+package com.embrace;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
