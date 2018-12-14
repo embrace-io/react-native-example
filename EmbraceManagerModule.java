@@ -1,4 +1,4 @@
-// Change with the package name of your application
+// Change to the package name of your application
 package com.embrace;
 
 import com.facebook.react.bridge.ReactApplicationContext;
