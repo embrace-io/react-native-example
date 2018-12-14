@@ -1,17 +1,16 @@
-package io.embrace.android.react;
+package com.embracerntestsuite;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
-import java.util.Dictionary;
 import java.util.Map;
 
 import io.embrace.android.embracesdk.Embrace;
 
-public class EmbraceManager extends ReactContextBaseJavaModule {
+public class EmbraceManagerModule extends ReactContextBaseJavaModule {
 
-    public EmbraceManager(ReactApplicationContext reactContext) {
+    public EmbraceManagerModule(ReactApplicationContext reactContext) {
         super(reactContext);
     }
 
