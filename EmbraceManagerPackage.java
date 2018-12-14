@@ -1,5 +1,5 @@
-
-package com.embracerntestsuite;
+// Change to the package name of your application
+package com.embrace;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
