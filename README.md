@@ -34,13 +34,6 @@ protected List<ReactPackage> getPackages() {
             new EmbraceManagerPackage() <--- New line
     );
 }
-@Override
-protected List<ReactPackage> getPackages() {
-    return Arrays.<ReactPackage>asList(
-            new MainReactPackage(),
-            new EmbraceManagerPackage() <--- New line
-    );
-}
 ```
 
 _Continue to the React Integration Steps in the next section._
@@ -54,14 +47,6 @@ Copy embrace.js into your JS codebase. Once complete, methods can be imported an
 A good starting place is ending your startup moment. This moment starts automatically with the code added to AppDelegate.m on iOS or MainActivity.java on Android, and you should end on Component mount similar to the below code.
 
 ```
-import {endAppStartup} from './embrace';
-
-type Props = {};
-export default class App extends Component<Props> {
-  componentDidMount() {
-    endAppStartup();
-  }
-}
 import {endAppStartup} from './embrace';
 
 type Props = {};
