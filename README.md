@@ -43,7 +43,7 @@ protected List<ReactPackage> getPackages() {
 
 Continue to the React Integration Steps in the next section.
 
-React Integration Steps
+# React Integration Steps
 After completing the Android and/or iOS steps below, please continue with the following steps.
 
 Step 1: Import and Call Methods
