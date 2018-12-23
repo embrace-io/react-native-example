@@ -2,6 +2,8 @@
 
 Embrace gathers the information needed to identify issues and measure performance automatically upon integration. The following React Native guide simply instructs on how to call the relevant functions so teams can provide much needed additional context to themselves (logs and user info) and measure the timing of key areas of their app explicitly (moments.)
 
+For additional functionality and explanations please refer to the [React Native Guide](https://docs.embrace.io/docs/quick-quide).
+
 # Approach
 We purposefully built a solution for React that is as extremely light weight and bucks a few trends. There is no reason to utilize a bulkier and more app invasive approach via NPM and native React calls, when all that is needed is a simple set of JS files that wrap existing calls from the iOS and Android SDKs.
 
