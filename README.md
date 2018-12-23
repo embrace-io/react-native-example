@@ -26,7 +26,7 @@ Copy EmbraceManagerPackage.java and EmbraceManagerModule.java into the Android R
 Step 3: Add EmbraceManager to the package list
 In MainApplication.java, under the getPackages() function, add a new instance of the EmbraceManagerPackage to the returning array.
 
-```
+```java
 @Override
 protected List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
@@ -46,7 +46,7 @@ Copy embrace.js into your JS codebase. Once complete, methods can be imported an
 
 A good starting place is ending your startup moment. This moment starts automatically with the code added to AppDelegate.m on iOS or MainActivity.java on Android, and you should end on Component mount similar to the below code.
 
-```
+```javascript
 import {endAppStartup} from './embrace';
 
 type Props = {};
@@ -62,7 +62,7 @@ Since React Native is built with either an iOS or Android native framework, many
 
 _The following calls located in the file, embrace.js, are listed below for reference._
 
-```
+```javascript
 // Startup: Call each place a startup may conclude.  Remember those deeplinks!
 endAppStartup()
 
