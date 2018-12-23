@@ -6,19 +6,19 @@ Embrace gathers the information needed to identify issues and measure performanc
 We purposefully built a solution for React that is as extremely light weight and bucks a few trends. There is no reason to utilize a bulkier and more app invasive approach via NPM and native React calls, when all that is needed is a simple set of JS files that wrap existing calls from the iOS and Android SDKs.
 
 # iOS Integration
-Step 1: Initialize the Embrace Native iOS SDK
+### Step 1: Initialize the Embrace Native iOS SDK
 Follow the steps in the iOS Quick Integration in order to add and initialize the Embrace SDK.
 
-Step 2: Add the Embrace Manager
+### Step 2: Add the Embrace Manager
 Copy EmbraceManager.h and EmbraceManager.m into the iOS React Native folder. (This guide provides a great example and walkthrough for the placement of the files when using a CocoaPod configuration.) The Embrace Manager files can be found on Github with the example on how to use React Native with Embrace.
 
-Continue to the React Integration Steps below.
+_Continue to the React Integration Steps below._
 
 # Android Integration
-Step 1: Initialize the Embrace Native Android SDK
+### Step 1: Initialize the Embrace Native Android SDK
 Follow the steps in the Android Quick Integration in order to add and initialize the Embrace SDK.
 
-Step 2: Add the Embrace Manager
+### Step 2: Add the Embrace Manager
 Copy EmbraceManagerPackage.java and EmbraceManagerModule.java into the Android React Native folder. These file have to be in the same hierarchy level as MainApplication.java. The Embrace Manager files can be found on Github with the example on how to use React Native with Embrace.
 
 Step 3: Add EmbraceManager to the package list
@@ -41,12 +41,12 @@ protected List<ReactPackage> getPackages() {
 }
 ```
 
-Continue to the React Integration Steps in the next section.
+_Continue to the React Integration Steps in the next section._
 
 # React Integration Steps
 After completing the Android and/or iOS steps below, please continue with the following steps.
 
-Step 1: Import and Call Methods
+### Step 1: Import and Call Methods
 Copy embrace.js into your JS codebase. Once complete, methods can be imported and called from this file.
 
 A good starting place is ending your startup moment. This moment starts automatically with the code added to AppDelegate.m on iOS or MainActivity.java on Android, and you should end on Component mount similar to the below code.
@@ -70,10 +70,10 @@ export default class App extends Component<Props> {
 }
 ```
 
-Step 2: Integrate the User Identifier, Logs and Moments into your App
+### Step 2: Integrate the User Identifier, Logs and Moments into your App
 Since React Native is built with either an iOS or Android native framework, many of the functionality integrated to effectively use Embrace can be called either in Swift / Obj-C, Java, or Javascript. Please follow the remainder of the iOS Quick Integration or Android Quick Integration for the steps to complete your integration.
 
-The following calls located in the file, embrace.js, are listed below for reference.
+_The following calls located in the file, embrace.js, are listed below for reference._
 
 ```
 // Startup: Call each place a startup may conclude.  Remember those deeplinks!
